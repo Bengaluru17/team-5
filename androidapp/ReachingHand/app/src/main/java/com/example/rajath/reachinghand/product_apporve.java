@@ -23,7 +23,7 @@ public class product_apporve extends AppCompatActivity {
     private EditText mTitleField;
     private EditText mBodyField;
     private EditText mBodyFieldAmount;
-
+    private EditText musername;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,7 @@ public class product_apporve extends AppCompatActivity {
         mTitleField = (EditText) findViewById(R.id.field_title);
         mBodyField = (EditText) findViewById(R.id.field_body);
         mBodyFieldAmount = (EditText) findViewById(R.id.field_title_price);
-
+        musername = (EditText) findViewById(R.id.field_usr);
         findViewById(R.id.fab_submit_post).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +53,8 @@ public class product_apporve extends AppCompatActivity {
         final String title = mTitleField.getText().toString();
         final String body = mBodyField.getText().toString();
         final String amount = mBodyFieldAmount.getText().toString();
+        final String usr = musername.getText().toString();
+
 
         // Title is required
         if (TextUtils.isEmpty(title)) {
@@ -66,9 +68,10 @@ public class product_apporve extends AppCompatActivity {
             return;
         }
 
-        Posts posts = new Posts(title,body,amount);
+        Posts posts = new Posts(title,body,amount,usr);
         mMessageReference.push().setValue(posts);
         finish();
     }
+
 
 }
