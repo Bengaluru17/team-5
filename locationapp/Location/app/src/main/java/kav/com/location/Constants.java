@@ -6,3 +6,4 @@ package kav.com.location;
 
 public class Constants {
 }
+
