@@ -21,25 +21,9 @@
         <p><input id="username" name="username" type="text" placeholder="Username*" required></p>
         <p><input id="password" name="password" type="password" placeholder="Password*" required></p>
         <p><input type="submit" value="Log in"></p>
-<!--        <a href="../cust/">Customer Login</a>-->
-
-<!--        <div class="form__field">-->
-<!--            <label for="login__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">Username</span></label>-->
-<!--            <input id="login__username" type="text" name="username" class="form__input" placeholder="Username" required>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="form__field">-->
-<!--            <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Password</span></label>-->
-<!--            <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="form__field">-->
-<!--            <input type="submit" value="Sign In">-->
-<!--        </div>-->
-
     </form>
 
-    <p class="text--center">Not a member? <a href="#">Sign up now</a> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#arrow-right"></use></svg></p>
+    <p class="text--center">Not an admin? <a href="#">Sign up as user</a></p>
 
 </div>
 

@@ -6,9 +6,8 @@ $result = $conn->query($check);
 
 if (mysqli_num_rows($result) == 1)
 {
-    // echo "Successful login. Redirecting to the home page in 3 seconds.\n";
+    // echo "Successful login.\n";
     $row = mysqli_fetch_row($result);
-    //    $aid_new = $row[0];
     $username_new = $row[1];
     $_SESSION['username']= $username_new;
     echo "<script>alert('Success!');</script>";

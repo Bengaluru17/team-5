@@ -1,16 +1,19 @@
 <div class="sidebar-wrapper">
-    <div class="title">
+    <div class="cotitle">
         Reaching Hands
     </div>
     <div class="profile-element">
+        <div class="profile-element-name">
+            Hello, Name!
+        </div>
     </div>
     <div class="other-element">
-        Option 1
+        <a href="">Option 1</a>
     </div>
     <div class="other-element">
-        Option 2
+        <a href="">Option 1</a>
     </div>
     <div class="other-element">
-        Option 3
+        <a href="">Option 1</a>
     </div>
 </div>
