@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -24,6 +25,9 @@ public class product_apporve extends AppCompatActivity {
     private EditText mBodyField;
     private EditText mBodyFieldAmount;
     private EditText musername;
+    private boolean isapprove;
+    private String appr;
+    Posts posts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +58,8 @@ public class product_apporve extends AppCompatActivity {
         final String body = mBodyField.getText().toString();
         final String amount = mBodyFieldAmount.getText().toString();
         final String usr = musername.getText().toString();
-
+        Admin_approve obj = new Admin_approve(usr,amount,body);
+        isapprove = obj.checkuser();
 
         // Title is required
         if (TextUtils.isEmpty(title)) {
@@ -68,7 +73,23 @@ public class product_apporve extends AppCompatActivity {
             return;
         }
 
-        Posts posts = new Posts(title,body,amount,usr);
+
+
+
+        if (isapprove)
+        {
+            Toast.makeText(this, "Purchase approved",
+                    Toast.LENGTH_LONG).show();
+
+             posts = new Posts(title,body,amount,usr,appr="1");
+
+        }
+        else
+        {
+            Toast.makeText(this, "Purchase notApporved",
+                    Toast.LENGTH_LONG).show();
+            posts = new Posts(title,body,amount,usr,appr="0");
+        }
         mMessageReference.push().setValue(posts);
         finish();
     }
