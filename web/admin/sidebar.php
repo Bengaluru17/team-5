@@ -8,12 +8,21 @@
         </div>
     </div>
     <div class="other-element">
-        <a href="">Option 1</a>
+        <i class="fa fa-user-plus" aria-hidden="true"></i>
+        <a href="">
+            Add Users
+        </a>
     </div>
     <div class="other-element">
-        <a href="">Option 1</a>
+        <a href="">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            View Inventory
+        </a>
     </div>
     <div class="other-element">
-        <a href="">Option 1</a>
+        <a href="">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            Check Accounts
+        </a>
     </div>
 </div>
