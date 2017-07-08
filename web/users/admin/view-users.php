@@ -11,8 +11,8 @@ $result = $conn->query($getlist);
 $search_result = $result;
 
 if (isset($_GET['perm']))
-{   echo "show";
-    $getlist = "SELECT * FROM `login` WHERE `perm` = ".$_GET['perm']." ";
+//{   echo "show";
+    $getlist = 'SELECT * FROM `login` WHERE `perm`="'.$_GET['perm'].'"';
     $search_result = $conn->query($getlist);
 //    $row = mysqli_fetch_row($search_result);
 //    echo $row[2];
@@ -21,7 +21,12 @@ if (isset($_GET['perm']))
 
 <div class="main-body">
     <div class="pagetitle">
-        Views Users: <?php if(isset($_GET['perm'])) echo $_GET['perm'];?>
+        Views Users: <?php
+        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ad") == 0) echo "Admin";
+        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ac") == 0) echo "Accountant";
+        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"wa") == 0) echo "Warden";
+        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"vo") == 0) echo "Volunteer";
+        ?>
     </div>
     <div class="userfilter">
         <form method="GET" action="view-users.php" id="searchForm">
@@ -34,7 +39,7 @@ if (isset($_GET['perm']))
                 </select>
             </div>
 <!--            <input type="hidden" value="Yes" name="AddUser">-->
-            <button type="submit" class="btn btn-primary">Add User</button>
+            <button type="submit" class="btn btn-primary">Filter Users</button>
         </form>
     </div>
 <!--    --><?php //if($search_result)
@@ -59,8 +64,10 @@ if (isset($_GET['perm']))
                     <td><?php echo $row[4]; ?></td>
                     <td><?php echo $row[5]; ?></td>
                     <td><?php
-                        if (strcmp ($row[6],"ad") == 0)
-                            echo "Admin";
+                        if(strcmp ($row[6],"ad") == 0) echo "Admin";
+                        if(strcmp ($row[6],"ac") == 0) echo "Accountant";
+                        if(strcmp ($row[6],"wa") == 0) echo "Warden";
+                        if(strcmp ($row[6],"vo") == 0) echo "Volunteer";
                         ?>
                     </td>
                     <td
