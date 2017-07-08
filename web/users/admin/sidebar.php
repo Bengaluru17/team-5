@@ -26,7 +26,7 @@
         </a>
     </div>
     <div class="other-element">
-        <a href="check-accounts.php">
+        <a href="logout.php">
             <i class="fa fa-sign-out" aria-hidden="true"></i>
             Logout
         </a>
