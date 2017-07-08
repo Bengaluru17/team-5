@@ -7,9 +7,21 @@
     background-color: #d44179;
 }
 
+.logo{
+    margin-top: 1em;
+    text-align: center;
+}
+
+.logo img{
+    height: 100px;
+}
+
 .cotitle{
-    padding: 1em 0em 1em 0.8em;
-    font-size: 2em;
+    text-align: center;
+    padding-bottom: 1em;
+    //padding: 1em 0em 1em 0.8em;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.5em;
 }
 
 .profile-element{

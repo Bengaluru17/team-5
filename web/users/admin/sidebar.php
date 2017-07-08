@@ -1,4 +1,7 @@
 <div class="sidebar-wrapper">
+    <div class="logo">
+        <img src="http://i.imgur.com/9VmroRY.png">
+    </div>
     <div class="cotitle">
         Reaching Hands
     </div>
@@ -23,6 +26,12 @@
         <a href="view-inventory.php">
             <i class="fa fa-truck" aria-hidden="true"></i>
             View Inventory
+        </a>
+    </div>
+    <div class="other-element">
+        <a href="view-requests.php">
+            <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+            View Requests
         </a>
     </div>
     <div class="other-element">
