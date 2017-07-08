@@ -231,18 +231,3 @@ p {
 .text--center {
     text-align: center;
 }
-
-.user-list table, th{
-    border: 3px solid black;
-    border-collapse: collapse;
-    width: 100%;
-    height: 50px;
-
-}
-
-.user-list td{
-    border: 1px solid black;
-    border-collapse: collapse;
-    height: 50px;
-    text-align: center;
-}

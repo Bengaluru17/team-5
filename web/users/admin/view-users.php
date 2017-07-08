@@ -7,7 +7,7 @@ include 'sidebar.php';
     <div class="pagetitle">
         Views Users
     </div>
-    <div class="viewusers">
+    <div class="view-users">
         <?php
 
         $getlist = "SELECT * FROM login";
@@ -19,14 +19,13 @@ include 'sidebar.php';
         //                $search_result = $conn->query($search_getlist);
         //            }
         ?>
-    </div>
         <table>
             <tr>
-                <th style="width:20%">Username</th>
-                <th style="width:25%">Name</th>
-                <th style="width:25%">Email</th>
-                <th style="width:20%">Contact</th>
-                <th style="width:10%">Permissions</th>
+                <th style="width:15%">Username</th>
+                <th style="width:20%">Name</th>
+                <th style="width:20%">Email</th>
+                <th style="width:15%">Contact</th>
+                <th style="width:15%">Permissions</th>
                 <th>Operations</th>
             </tr>
 
@@ -38,31 +37,47 @@ include 'sidebar.php';
                     <td><?php echo $row[2]; echo " "; echo $row[3]; ?></td>
                     <td><?php echo $row[4]; ?></td>
                     <td><?php echo $row[5]; ?></td>
+                    <td><?php
+                        if (strcmp ($row[6],"ad") == 0)
+                            echo "Admin";
+                        ?>
+                    </td>
                     <td
                     <td>
-                        <form action="#" method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="cid" value="<?php echo $row[0]; ?>">
-                            <input type="hidden" name="type" value="edit">
-                            <button type="submit" title="Edit Details">
-                                <i class="fa fa-pencil"></i>
-                            </button>
-                        </form>
-
-                        <form action="#" method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="cid" value="<?php echo $row[0]; ?>">
-                            <input type="hidden" name="type" value="view">
-                            <button type="submit" title="View Details">
-                                <i class="fa fa-eye"></i>
-                            </button>
-                        </form>
-
-                        <form action="#" method="POST"">
-                        <input type="hidden" name="cid" value="<?php echo $row[0]; ?>">
-                        <input type="hidden" name="Del_Type" value="del">
+                        <span>
+                        <button type="submit" title="Edit Details">
+                            <i class="fa fa-pencil"></i>
+                        </button>
+                        <button type="submit" title="View Details">
+                            <i class="fa fa-eye"></i>
+                        </button>
                         <button type="submit" title="Delete">
                             <i class="fa fa-trash"></i>
                         </button>
-                        </form>
+                        </span>
+<!--                        <form action="#" method="post" enctype="multipart/form-data">-->
+<!--                            <input type="hidden" name="cid" value="--><?php //echo $row[0]; ?><!--">-->
+<!--                            <input type="hidden" name="type" value="edit">-->
+<!--                            <button type="submit" title="Edit Details">-->
+<!--                                <i class="fa fa-pencil"></i>-->
+<!--                            </button>-->
+<!--                        </form>-->
+<!---->
+<!--                        <form action="#" method="post" enctype="multipart/form-data">-->
+<!--                            <input type="hidden" name="cid" value="--><?php //echo $row[0]; ?><!--">-->
+<!--                            <input type="hidden" name="type" value="view">-->
+<!--                            <button type="submit" title="View Details">-->
+<!--                                <i class="fa fa-eye"></i>-->
+<!--                            </button>-->
+<!--                        </form>-->
+<!---->
+<!--                        <form action="#" method="POST"">-->
+<!--                        <input type="hidden" name="cid" value="--><?php //echo $row[0]; ?><!--">-->
+<!--                        <input type="hidden" name="Del_Type" value="del">-->
+<!--                        <button type="submit" title="Delete">-->
+<!--                            <i class="fa fa-trash"></i>-->
+<!--                        </button>-->
+<!--                        </form>-->
 
                     </td>
                 </tr>
@@ -70,6 +85,7 @@ include 'sidebar.php';
             }
             ?>
         </table>
+    </div>
     </div>
 </body>
 </html>
