@@ -7,6 +7,7 @@
     <link href="indexstyle.scss" rel="stylesheet">
     <link href="../indexstyle.scss" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 
     <script>
         function validateAddForm()

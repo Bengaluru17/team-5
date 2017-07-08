@@ -6,14 +6,18 @@ $result = $conn->query($check);
 
 if (mysqli_num_rows($result) == 1)
 {
+//    session_start();
     // echo "Successful login.\n";
     $row = mysqli_fetch_row($result);
-    $username_new = $row[0];
-    $user_perm = $row[6];
-    $_SESSION['username']= $username_new;
-    echo "<script>alert('Success!');</script>";
-    echo $user_perm;
-    if( strcmp($user_perm,"ad") == 0 )
+    $loguser_username = $row[0];
+    $loguser_first_name = $row[2];
+    $loguser_perm = $row[6];
+    $_SESSION['username'] = $loguser_username;
+    $_SESSION['first_name'] = $loguser_first_name;
+    echo $_SESSION['first_name'];
+    // echo "<script>alert('Success!');</script>";
+    // echo $user_perm;
+    if( strcmp($loguser_perm,"ad") == 0 )
         header("Location: admin/main.php");
 //    else if ( strcmp($user_perm));
 }
