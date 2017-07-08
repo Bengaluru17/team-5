@@ -12,8 +12,10 @@ if (mysqli_num_rows($result) == 1)
     $user_perm = $row[6];
     $_SESSION['username']= $username_new;
     echo "<script>alert('Success!');</script>";
-    if( strcmp($user_perm,"ad") )
-    header("Location: index.php");
+    echo $user_perm;
+    if( strcmp($user_perm,"ad") == 0 )
+        header("Location: admin/main.php");
+//    else if ( strcmp($user_perm));
 }
 else
 {   // echo "<script>alert('No success! Please use the correct details.');</script>";

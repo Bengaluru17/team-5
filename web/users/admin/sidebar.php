@@ -9,7 +9,7 @@
     </div>
     <div class="other-element">
         <i class="fa fa-user-plus" aria-hidden="true"></i>
-        <a href="">
+        <a href="add-user.php">
             Add Users
         </a>
     </div>

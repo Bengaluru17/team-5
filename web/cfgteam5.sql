@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 08, 2017 at 04:46 PM
+-- Generation Time: Jul 08, 2017 at 03:43 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -30,8 +30,7 @@ CREATE TABLE `child_info` (
   `DOB` varchar(9) NOT NULL,
   `date_of_join` varchar(10) NOT NULL,
   `gender` varchar(2) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `roll_no` int(100) NOT NULL
+  `name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -73,28 +72,6 @@ CREATE TABLE `login` (
   `contact` varchar(12) NOT NULL,
   `perm` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `child_info`
---
-ALTER TABLE `child_info`
-  ADD PRIMARY KEY (`roll_no`);
-
---
--- Indexes for table `donation`
---
-ALTER TABLE `donation`
-  ADD PRIMARY KEY (`donar_name`);
-
---
--- Indexes for table `login`
---
-ALTER TABLE `login`
-  ADD PRIMARY KEY (`email`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
