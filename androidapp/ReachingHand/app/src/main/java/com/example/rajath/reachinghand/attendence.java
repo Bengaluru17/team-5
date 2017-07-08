@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -56,14 +57,20 @@ public class attendence extends AppCompatActivity {
             for (String e:attendedstu){
             attnd= new Attendences(e,"p");
                 mMessageReference.push().setValue(attnd);
-                finish();
 
+
+                finish();
             }
+
         }
     });
 
 
     }
 
-
+    @Override
+    protected void onDestroy() {
+        Toast.makeText(this,"Attendence Taken",Toast.LENGTH_LONG).show();
+        super.onDestroy();
+    }
 }

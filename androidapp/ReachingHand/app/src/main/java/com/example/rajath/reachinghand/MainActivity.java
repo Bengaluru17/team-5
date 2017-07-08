@@ -1,6 +1,7 @@
 package com.example.rajath.reachinghand;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -14,6 +15,8 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -30,12 +33,15 @@ public class MainActivity extends AppCompatActivity {
     private ChildEventListener mChildEventListner;
     private ListAdapter mAdapter;
     private ListView mListView;
+    private FirebaseAuth mAuth;
+    private FirebaseAuth.AuthStateListener mAuthListner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
 
 
@@ -59,6 +65,27 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("onCreateEnd", "onCreate:");
 
+        mAuthListner = new FirebaseAuth.AuthStateListener() {
+            public static final int RC_SIGN_IN = 1;
+
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user != null){
+                    signedInEvent(user.getDisplayName());
+                } else {
+                    signedOutEvent();
+                    startActivityForResult(
+                            AuthUI.getInstance()
+                                    .createSignInIntentBuilder()
+                                    .setIsSmartLockEnabled(false)
+                                    .setProviders(
+                                            AuthUI.EMAIL_PROVIDER)
+                                    .build(),
+                            RC_SIGN_IN);
+                }
+            }
+
     }
 
     @Override
@@ -71,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-
+            case R.id.attendence: startActivity(new Intent(MainActivity.this,attendence.class));
         }
         return true;
     }
@@ -108,4 +135,10 @@ public class MainActivity extends AppCompatActivity {
         mMessageReference.addChildEventListener(mChildEventListner);
     }
 }
+
+    private void signedOutEvent() {
+    }
+
+    private void signedInEvent(String displayName) {
+    }
 
