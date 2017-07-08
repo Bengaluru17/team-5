@@ -49,3 +49,62 @@
 .pagetitle{
     font-size: 2em;
 }
+
+.addform{
+    width: 30em;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.addform input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+}
+
+.addform input[type="email"],
+.addform input[type="password"] {
+    background: #fff;
+}
+
+/* Text fields' focus effect */
+.addform input[type="email"]:focus,
+.addform input[type="password"]:focus {
+    border-color: #888;
+}
+
+.addform input[type="submit"] {
+    background: #28d;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.addform button {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+    background: #d44179;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.addform input[type="submit"]:hover {
+    background: #17c;
+}
+
+.addform input[type="submit"]:focus {
+    border-color: #05a;
+}
