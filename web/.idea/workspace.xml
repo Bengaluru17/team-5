@@ -21,69 +21,7 @@
     <favorites_list name="web" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view-inventory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/admin/view-inventory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-              <folding>
-                <marker date="1499545706040" expanded="true" signature="138:161" ph="SELECT * FRO... inventory" />
-                <marker date="1499545706040" expanded="true" signature="386:409" ph="SELECT * FRO... inventory" />
-                <marker date="1499545706040" expanded="true" signature="517:558" ph="SELECT * FRO... inventory" />
-                <marker date="1499545706040" expanded="true" signature="517:581" ph="SELECT * FRO... inventory" />
-                <marker date="1499545706040" expanded="true" signature="689:749" ph="SELECT * FRO... inventory" />
-                <marker date="1499545706040" expanded="true" signature="892:945" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="892:5735" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="920:945" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="984:1935" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="1056:1924" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="1094:1339" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="1133:1320" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="1377:1748" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="1418:1729" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2021:5728" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2037:5717" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2054:2081" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2054:2328" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2083:2092" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2135:2144" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2183:2192" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2232:2241" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2285:2294" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2449:5649" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2474:2516" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2474:2824" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2953:2995" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="2953:3147" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="3172:5627" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="3203:3241" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="3203:3546" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="3271:3362" ph="..." />
-                <marker date="1499545706040" expanded="true" signature="3424:3514" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view-users.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/users/admin/view-users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <marker date="1499543912050" expanded="true" signature="138:157" ph="SELECT * FRO... login" />
-                <marker date="1499543912050" expanded="true" signature="263:298" ph="SELECT * FRO... login" />
-                <marker date="1499543912050" expanded="true" signature="263:299" ph="SELECT * FRO... login" />
-                <marker date="1499543912050" expanded="true" signature="263:307" ph="SELECT * FRO... login" />
-                <marker date="1499543912050" expanded="true" signature="263:314" ph="SELECT * FRO... login" />
-                <marker date="1499543912050" expanded="true" signature="263:317" ph="SELECT * FRO... login" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -261,13 +199,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31868000" />
+    <option name="totallyTimeSpent" value="32068000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16944024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16944024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09328969" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -525,6 +463,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/users/admin/view-users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="11" selection-start-line="13" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1499543912050" expanded="true" signature="138:157" ph="SELECT * FRO... login" />
+            <marker date="1499543912050" expanded="true" signature="263:298" ph="SELECT * FRO... login" />
+            <marker date="1499543912050" expanded="true" signature="263:299" ph="SELECT * FRO... login" />
+            <marker date="1499543912050" expanded="true" signature="263:307" ph="SELECT * FRO... login" />
+            <marker date="1499543912050" expanded="true" signature="263:314" ph="SELECT * FRO... login" />
+            <marker date="1499543912050" expanded="true" signature="263:317" ph="SELECT * FRO... login" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/users/admin/view-inventory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -563,21 +516,6 @@
             <marker date="1499545706040" expanded="true" signature="3203:3546" ph="..." />
             <marker date="1499545706040" expanded="true" signature="3271:3362" ph="..." />
             <marker date="1499545706040" expanded="true" signature="3424:3514" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/admin/view-users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1499543912050" expanded="true" signature="138:157" ph="SELECT * FRO... login" />
-            <marker date="1499543912050" expanded="true" signature="263:298" ph="SELECT * FRO... login" />
-            <marker date="1499543912050" expanded="true" signature="263:299" ph="SELECT * FRO... login" />
-            <marker date="1499543912050" expanded="true" signature="263:307" ph="SELECT * FRO... login" />
-            <marker date="1499543912050" expanded="true" signature="263:314" ph="SELECT * FRO... login" />
-            <marker date="1499543912050" expanded="true" signature="263:317" ph="SELECT * FRO... login" />
           </folding>
         </state>
       </provider>
