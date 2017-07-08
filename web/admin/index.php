@@ -1,35 +1,10 @@
-<?php
-    echo "Team 5";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-
     <title>Login</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-
-    <!-- for google firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyB9YisplpYmFZx2HTypNA6PzNOEvWfzs8c",
-            authDomain: "cfgteam5.firebaseapp.com",
-            databaseURL: "https://cfgteam5.firebaseio.com",
-            projectId: "cfgteam5",
-            storageBucket: "cfgteam5.appspot.com",
-            messagingSenderId: "606264639007"
-        };
-        firebase.initializeApp(config);
-    </script>
-    <!-- firebase ends -->
-
 </head>
 
 <body class="align">
