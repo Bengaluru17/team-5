@@ -1,9 +1,51 @@
 .sidebar-wrapper{
+    position: fixed;
     height: 100%;
-    width: 2em;
-    position: absolute;
+    width: 20%;
+    left: 0;
+    top: 0;
     background-color: #d44179;
-    .title{
-        font-size: 2em;
-    }
+}
+
+.cotitle{
+    padding: 1em 0em 1em 0.8em;
+    font-size: 2em;
+}
+
+.profile-element{
+    background-color: rgb(154, 44, 85);
+    color: white;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+.profile-element-name{
+    padding: 0.2em;
+}
+
+.other-element{
+    //background-color: rgb(154, 44, 85);
+    padding-left: 2em;
+    color: white;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.other-element a{
+    color: white;
+    text-decoration: none;
+}
+
+.other-element i{
+    padding-right: 0.3em;
+}
+
+.main-body{
+    padding: 5% 0% 0% 25%;
+}
+
+.pagetitle{
+    font-size: 2em;
 }
