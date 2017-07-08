@@ -1,19 +1,6 @@
-<!-- to check if logged in or not -->
-<!-- if yes -->
 <?php
-    // header("Location: index.php");
+    include 'index.php'
 ?>
-<!--if no-->
-<!-- reload the page -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Login</title>
-    <link href="loginstyle.scss" rel="stylesheet">
-</head>
-
-<body class="align">
 
 <div class="grid">
 
