@@ -32,7 +32,13 @@ if(isset($_POST['username']))
                 <p><input id="username" name="username" type="text" placeholder="Username (4-10 characters)*" required></p>
                 <p><input id="password" name="password" type="password" placeholder="Password (min 6 characters)*" required></p>
                 <p><input type="hidden" value="Yes" name="AddCust" >
-                    <button type="submit" class="btn btn-primary">Add User</button></p>
+                <p><select name="role">
+                    <option value="ad">Admin</option>
+                    <option value="ac">Accountant</option>
+                    <option value="wa">Warden</option>
+                    <option value="vo">Volunteer</option>
+                </select></p>
+                <button type="submit" class="btn btn-primary">Add User</button></p>
             </form>
         </div>
     </div>

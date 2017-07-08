@@ -67,6 +67,25 @@
     font-size: 0.95em;
 }
 
+.addform select {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+}
+
+.addform select option {
+    border-style: solid;
+    padding: 16px;
+    font-family: inherit;
+    font-size: 0.95em;
+}
+
 .addform input[type="email"],
 .addform input[type="password"] {
     background: #fff;
