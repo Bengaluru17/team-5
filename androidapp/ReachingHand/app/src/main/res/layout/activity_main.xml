@@ -15,6 +15,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_new_post"
         android:layout_width="wrap_content"
@@ -23,5 +24,17 @@
         android:layout_alignParentRight="true"
         android:src="@drawable/ic_image_edit"
         android:layout_margin="16dp"/>
+||||||| merged common ancestors
+=======
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_new_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_image_edit"
+        android:layout_margin="16dp"/>
+
+>>>>>>> BranchAndroid
 
 </android.support.constraint.ConstraintLayout>
