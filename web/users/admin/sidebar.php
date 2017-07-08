@@ -27,8 +27,8 @@
     </div>
     <div class="other-element">
         <a href="check-accounts.php">
-            <i class="fa fa-university" aria-hidden="true"></i>
-            Check Accounts
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            Logout
         </a>
     </div>
 </div>

@@ -27,16 +27,16 @@ if (isset($_GET['gender']) || isset($_GET['category']))
     <div class="pagetitle">
         Inventory Stock
     </div>
-    <div class="userfilter">
+    <section class="userfilter">
         <form method="GET" action="view-inventory.php" id="searchForm">
-            <div class="input-group">
+            <div class="input-group gone">
                 <select name="gender">
                     <option value="both">Both</option>
                     <option value="m">Male</option>
                     <option value="f">Female</option>
                 </select>
             </div>
-            <div class="input-group">
+            <div class="input-group gtwo">
                 <select name="category">
                     <option value="all">All</option>
                     <option value="st">Stationary</option>
@@ -46,9 +46,11 @@ if (isset($_GET['gender']) || isset($_GET['category']))
                 </select>
             </div>
             <!--            <input type="hidden" value="Yes" name="AddUser">-->
-            <button type="submit" class="btn btn-primary">Filter Users</button>
+            <div class="gthree">
+                <button type="submit" class="btn btn-primary">Filter Users</button>
+            </div>
         </form>
-    </div>
+    </section>
     <!--    --><?php //if($search_result)
     //    { ?>
     <div class="view-users">

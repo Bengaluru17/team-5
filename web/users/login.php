@@ -2,6 +2,12 @@
     include 'index.php'
 ?>
 
+<div class="logo">
+    <img src="http://i.imgur.com/9VmroRY.png">
+</div>
+<div class="page-title">
+    Reaching Hands
+</div>
 <div class="grid">
 
     <form method="POST" class="form login" action="validate.php">
@@ -10,7 +16,9 @@
         <p><input type="submit" value="Log in"></p>
     </form>
 
-    <p class="text--center">Not an admin? <a href="#">Sign up as user</a></p>
+    <div class="foot-love">
+        <a href="https://madewithlove.org.in" target="_blank">Made with <span style="color: #e74c3c">&hearts;</span> in India</a>
+    </div>
 
 </div>
 
