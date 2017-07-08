@@ -36,14 +36,20 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
     compile 'com.firebase:firebase-client-android:2.5.2'
     compile 'com.google.firebase:firebase-database:11.0.2'
     compile 'com.google.firebase:firebase-storage:11.0.2'
+<<<<<<< HEAD
     compile 'com.android.support:recyclerview-v7:25.1.1'
 
+||||||| merged common ancestors
+
+=======
+    testCompile 'junit:junit:4.12'
+>>>>>>> 8f0ed29c7ce9f91b382b8d7564bb82657d8fd8ec
 }
 apply plugin: 'com.google.gms.google-services'

@@ -43,11 +43,13 @@
 }
 
 .main-body{
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     padding: 5% 0% 0% 25%;
 }
 
 .pagetitle{
     font-size: 2em;
+    text-decoration: underline dotted;
 }
 
 .addform{
@@ -119,4 +121,83 @@
 
 .addform input[type="submit"]:focus {
     border-color: #05a;
+}
+
+
+.view-users table,th{
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    height: 50px;
+}
+
+.view-users table{
+    width: 95%;
+    margin-top: 2em;
+}
+
+.view-users th{
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background: #8ec0ff;
+}
+
+.view-users td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 50px;
+    text-align: center;
+}
+
+//.userfilter{
+//    padding-top: 10px;
+//    width: 100%;
+//    padding: 10px;
+//}
+//.gone {
+//    width: 25%;
+//    //height: auto;
+//    //float: left;
+//}
+//.gtwo {
+//    width: 25%;
+//    //height: auto;
+//}
+
+.userfilter {
+    width: 100%;
+    //height: 200px;
+    margin: auto;
+     padding: 10px;
+}
+.gone {
+    width: 30%;
+    //height: 200px;
+    float: left;
+}
+.gtwo {
+    margin-left: 10%;
+    width: 30%;
+    float: right;
+}
+
+.gthree{
+    margin-left: 10%;
+    width: 15%;
+}
+
+.userfilter select {
+    //display: block;
+    box-sizing: border-box;
+    display: block;
+    width: 20%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    width: 80%;
+    font-family: inherit;
+    font-size: 0.95em;
 }

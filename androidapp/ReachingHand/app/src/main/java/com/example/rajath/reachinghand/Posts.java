@@ -8,13 +8,18 @@ public class Posts {
     private String productName;
     private String productQuantity;
     private String price;
+    private String username;
+    private String approve;
     public Posts(){
     }
 
-    public Posts(String product, String quantity, String pri){
+    public Posts(String product, String quantity, String pri,String usr,String appro){
         productName = product;
         productQuantity = quantity;
         price = pri;
+        username=usr;
+        approve=appro;
+
     }
 
     public String getProductName(){
@@ -39,5 +44,19 @@ public class Posts {
 
     public void setPrice(String p){
         price = p;
+    }
+
+    public String getusr(){
+        return username;
+    }
+    public void setusr(String p){
+        username= p;
+    }
+
+    public String getappro(){
+        return approve;
+    }
+    public void setappro(String p){
+        approve= p;
     }
 }

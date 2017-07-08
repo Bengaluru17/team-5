@@ -23,6 +23,7 @@
 }
 
 .grid {
+    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
     max-width: var(--gridMaxWidth);
@@ -230,4 +231,28 @@ p {
 
 .text--center {
     text-align: center;
+}
+
+.logo{
+    margin-top: 8em;
+    text-align: center;
+}
+
+.logo img{
+    height: 100px;
+}
+.page-title{
+    text-align: center;
+    color: #8ec0ff;
+    font-size: 2em;
+}
+
+.foot-love{
+    text-align: center;
+}
+
+.gthree button{
+    background-color: #ea4c88;
+    border: 1px solid black;
+    color: white;
 }
