@@ -1,24 +1,45 @@
 <?php
 include '../index.php';
 include 'sidebar.php';
+
+//if(isset($_GET['search'])){
+//    $get_search = $_GET['search'];
+//}
+
+$getlist = "SELECT * FROM login";
+$result = $conn->query($getlist);
+$search_result = $result;
+
+if (isset($_GET['perm']))
+{   echo "show";
+    $getlist = "SELECT * FROM `login` WHERE `perm` = ".$_GET['perm']." ";
+    $search_result = $conn->query($getlist);
+//    $row = mysqli_fetch_row($search_result);
+//    echo $row[2];
+}
 ?>
 
 <div class="main-body">
     <div class="pagetitle">
-        Views Users
+        Views Users: <?php if(isset($_GET['perm'])) echo $_GET['perm'];?>
     </div>
+    <div class="userfilter">
+        <form method="GET" action="view-users.php" id="searchForm">
+            <div class="input-group">
+                <select name="perm">
+                    <option value="ad">Admin</option>
+                    <option value="ac">Accountant</option>
+                    <option value="wa">Warden</option>
+                    <option value="vo">Volunteer</option>
+                </select>
+            </div>
+<!--            <input type="hidden" value="Yes" name="AddUser">-->
+            <button type="submit" class="btn btn-primary">Add User</button>
+        </form>
+    </div>
+<!--    --><?php //if($search_result)
+//    { ?>
     <div class="view-users">
-        <?php
-
-        $getlist = "SELECT * FROM login";
-        $result = $conn->query($getlist);
-        $search_result = $result;
-
-        //            if ($get_search != "")
-        //            {   $search_getlist = "SELECT * FROM customer WHERE zone=$cur_zone && contact= ".$get_search." ";
-        //                $search_result = $conn->query($search_getlist);
-        //            }
-        ?>
         <table>
             <tr>
                 <th style="width:15%">Username</th>
@@ -86,6 +107,9 @@ include 'sidebar.php';
             ?>
         </table>
     </div>
+<!--    --><?php //}
+//    else echo "no results";
+//    ?>
     </div>
 </body>
 </html>

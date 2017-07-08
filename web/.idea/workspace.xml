@@ -25,31 +25,44 @@
       <file leaf-file-name="view-users.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/admin/view-users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+            <state relative-caret-position="407">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <marker date="1499534183891" expanded="true" signature="204:223" ph="SELECT * FRO... login" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <marker date="1499537161408" expanded="true" signature="138:157" ph="SELECT * FRO... login" />
+                <marker date="1499537161408" expanded="true" signature="280:317" ph="SELECT * FRO... customer" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="add-user.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/admin/add-user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="43" column="87" selection-start-line="42" selection-start-column="16" selection-end-line="43" selection-end-column="87" />
+              <folding>
+                <marker date="1499526063965" expanded="true" signature="359:586" ph="INSERT INTO login... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="232" column="1" selection-start-line="232" selection-start-column="1" selection-end-line="232" selection-end-column="1" />
+            <state relative-caret-position="126">
+              <caret line="196" column="30" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexstyle.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="indexstyle.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users/indexstyle.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
@@ -83,8 +96,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/users/login.php" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/users/admin/view-users.php" />
         <option value="$PROJECT_DIR$/users/indexstyle.scss" />
+        <option value="$PROJECT_DIR$/users/admin/view-users.php" />
       </list>
     </option>
   </component>
@@ -235,10 +248,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23250000" />
+    <option name="totallyTimeSpent" value="25739000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16944024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -475,35 +488,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/admin/add-user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <marker date="1499526063965" expanded="true" signature="359:586" ph="INSERT INTO login... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="232" column="1" selection-start-line="232" selection-start-column="1" selection-end-line="232" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/admin/view-users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        <state relative-caret-position="407">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <marker date="1499534183891" expanded="true" signature="204:223" ph="SELECT * FRO... login" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <marker date="1499537161408" expanded="true" signature="138:157" ph="SELECT * FRO... login" />
+            <marker date="1499537161408" expanded="true" signature="280:317" ph="SELECT * FRO... customer" />
           </folding>
         </state>
       </provider>
@@ -512,6 +508,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/admin/add-user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="43" column="87" selection-start-line="42" selection-start-column="16" selection-end-line="43" selection-end-column="87" />
+          <folding>
+            <marker date="1499526063965" expanded="true" signature="359:586" ph="INSERT INTO login... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="196" column="30" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
           <folding />
         </state>
       </provider>
