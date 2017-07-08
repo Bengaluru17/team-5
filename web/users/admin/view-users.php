@@ -11,8 +11,7 @@ $result = $conn->query($getlist);
 $search_result = $result;
 
 if (isset($_GET['perm']))
-//{   echo "show";
-    $getlist = 'SELECT * FROM `login` WHERE `perm`="'.$_GET['perm'].'"';
+{   $getlist = 'SELECT * FROM `login` WHERE `perm`="'.$_GET['perm'].'"';
     $search_result = $conn->query($getlist);
 //    $row = mysqli_fetch_row($search_result);
 //    echo $row[2];
@@ -21,11 +20,11 @@ if (isset($_GET['perm']))
 
 <div class="main-body">
     <div class="pagetitle">
-        Views Users: <?php
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ad") == 0) echo "Admin";
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ac") == 0) echo "Accountant";
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"wa") == 0) echo "Warden";
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"vo") == 0) echo "Volunteer";
+        Views Users<?php
+        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ad") == 0) echo ": Admin";
+        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ac") == 0) echo ": Accountant";
+        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"wa") == 0) echo ": Warden";
+        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"vo") == 0) echo ": Volunteer";
         ?>
     </div>
     <div class="userfilter">

@@ -11,8 +11,12 @@ $result = $conn->query($getlist);
 $search_result = $result;
 
 if (isset($_GET['gender']) || isset($_GET['category']))
-{   echo "show";
-    $getlist = 'SELECT * FROM `inventory` WHERE `gender`="'.$_GET['gender'].'" AND `category`="'.$_GET['category'].'"';
+{   if(strcmp ($_GET['gender'],"both") == 0 && strcmp($_GET['category'],"all") == 0)
+        $getlist = "SELECT * FROM inventory";
+    if(strcmp ($_GET['gender'],"both") == 0 && strcmp($_GET['category'],"all") != 0)
+        $getlist = 'SELECT * FROM inventory WHERE `category`="'.$_GET['category'].'"';
+    if(strcmp ($_GET['gender'],"both") != 0 && strcmp($_GET['category'],"all") == 0)
+        $getlist = 'SELECT * FROM inventory WHERE `gender`="'.$_GET['gender'].'"';
     $search_result = $conn->query($getlist);
 //    $row = mysqli_fetch_row($search_result);
 //    echo $row[2];
@@ -21,23 +25,20 @@ if (isset($_GET['gender']) || isset($_GET['category']))
 
 <div class="main-body">
     <div class="pagetitle">
-        Views Users: <?php
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ad") == 0) echo "Admin";
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ac") == 0) echo "Accountant";
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"wa") == 0) echo "Warden";
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"vo") == 0) echo "Volunteer";
-        ?>
+        Inventory Stock
     </div>
     <div class="userfilter">
-        <form method="GET" action="view-users.php" id="searchForm">
+        <form method="GET" action="view-inventory.php" id="searchForm">
             <div class="input-group">
                 <select name="gender">
+                    <option value="both">Both</option>
                     <option value="m">Male</option>
                     <option value="f">Female</option>
                 </select>
             </div>
             <div class="input-group">
                 <select name="category">
+                    <option value="all">All</option>
                     <option value="st">Stationary</option>
                     <option value="kt">Kitchen</option>
                     <option value="ut">Utilities</option>
@@ -53,37 +54,35 @@ if (isset($_GET['gender']) || isset($_GET['category']))
     <div class="view-users">
         <table>
             <tr>
-                <th style="width:15%">Username</th>
+                <th style="width:15%">Category</th>
                 <th style="width:20%">Name</th>
-                <th style="width:20%">Email</th>
-                <th style="width:15%">Contact</th>
-                <th style="width:15%">Permissions</th>
-                <th>Operations</th>
+                <th style="width:20%">Count</th>
+                <th style="width:15%">Dormitory</th>
+                <th style="width:15%">Operations</th>
             </tr>
 
             <?php
             while ($row = mysqli_fetch_row($search_result)) {
                 ?>
                 <tr>
-                    <td><?php echo $row[0]; ?></td>
-                    <td><?php echo $row[2]; echo " "; echo $row[3]; ?></td>
-                    <td><?php echo $row[4]; ?></td>
-                    <td><?php echo $row[5]; ?></td>
                     <td><?php
-                        if(strcmp ($row[6],"ad") == 0) echo "Admin";
-                        if(strcmp ($row[6],"ac") == 0) echo "Accountant";
-                        if(strcmp ($row[6],"wa") == 0) echo "Warden";
-                        if(strcmp ($row[6],"vo") == 0) echo "Volunteer";
+                        if(strcmp ($row[4],"st") == 0) echo "Stationary";
+                        if(strcmp ($row[4],"kt") == 0) echo "Kitchen";
+                        if(strcmp ($row[4],"ut") == 0) echo "Utilities";
+                        if(strcmp ($row[4],"md") == 0) echo "Medication";
                         ?>
                     </td>
-                    <td
+                    <td><?php echo $row[1]; ?></td>
+                    <td><?php echo $row[2]; ?></td>
+                    <td><?php
+                        if(strcmp ($row[0],"m") == 0) echo "Male";
+                        if(strcmp ($row[0],"f") == 0) echo "Female";
+                        ?>
+                    </td>
                     <td>
                         <span>
                         <button type="submit" title="Edit Details">
                             <i class="fa fa-pencil"></i>
-                        </button>
-                        <button type="submit" title="View Details">
-                            <i class="fa fa-eye"></i>
                         </button>
                         <button type="submit" title="Delete">
                             <i class="fa fa-trash"></i>
@@ -120,11 +119,6 @@ if (isset($_GET['gender']) || isset($_GET['category']))
             ?>
         </table>
     </div>
-    <!--    --><?php //}
-    //    else echo "no results";
-    //    ?>
 </div>
 </body>
 </html>
-
-
