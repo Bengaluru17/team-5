@@ -14,6 +14,12 @@
         </a>
     </div>
     <div class="other-element">
+        <a href="view-users.php">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            View Users
+        </a>
+    </div>
+    <div class="other-element">
         <a href="view-inventory.php">
             <i class="fa fa-truck" aria-hidden="true"></i>
             View Inventory
