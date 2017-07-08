@@ -71,25 +71,4 @@ public class product_apporve extends AppCompatActivity {
         finish();
     }
 
-    private void submitPost() {
-        final String title = mTitleField.getText().toString();
-        final String body = mBodyField.getText().toString();
-        final String amount = mBodyFieldAmount.getText().toString();
-
-        // Title is required
-        if (TextUtils.isEmpty(title)) {
-            mTitleField.setError(REQUIRED);
-            return;
-        }
-
-        // Body is required
-        if (TextUtils.isEmpty(body)) {
-            mBodyField.setError(REQUIRED);
-            return;
-        }
-
-        Posts posts = new Posts(title,body,amount);
-        mMessageReference.push().setValue(posts);
-        finish();
-    }
 }
