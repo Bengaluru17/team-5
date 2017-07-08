@@ -1,7 +1,9 @@
 .sidebar-wrapper{
+    position: fixed;
     height: 100%;
-    width: 2em;
-    position: absolute;
+    width: 15%;
+    left: 0;
+    top: 0;
     background-color: #d44179;
     .title{
         font-size: 2em;
