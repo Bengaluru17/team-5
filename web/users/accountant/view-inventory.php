@@ -2,7 +2,7 @@
 include '../index.php';
 include 'sidebar.php';
 
-if(!isset($_SESSION['perm']) || strcmp($_SESSION['perm'],"ad")!=0)
+if(!isset($_SESSION['perm']) || strcmp($_SESSION['perm'],"ac")!=0)
     header('Location: logout.php');
 
 //if(isset($_GET['search'])){

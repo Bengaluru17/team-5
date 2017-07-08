@@ -27,7 +27,6 @@ if (mysqli_num_rows($result) == 1)
 
 }
 else
-{   echo $check;
-    echo "False";
+{   header("Location: login.php");
 }
 ?>

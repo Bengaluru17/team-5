@@ -1,4 +1,7 @@
 <div class="sidebar-wrapper">
+    <div class="logo">
+        <img src="http://i.imgur.com/9VmroRY.png">
+    </div>
     <div class="cotitle">
         Reaching Hands
     </div>
