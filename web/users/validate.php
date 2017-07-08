@@ -8,9 +8,11 @@ if (mysqli_num_rows($result) == 1)
 {
     // echo "Successful login.\n";
     $row = mysqli_fetch_row($result);
-    $username_new = $row[1];
+    $username_new = $row[0];
+    $user_perm = $row[6];
     $_SESSION['username']= $username_new;
     echo "<script>alert('Success!');</script>";
+    if( strcmp($user_perm,"ad") )
     header("Location: index.php");
 }
 else
