@@ -1,4 +1,4 @@
 <?php
 include 'config.php';
-header("Location: admin/login.php");
+header("Location: users/login.php");
 ?>
