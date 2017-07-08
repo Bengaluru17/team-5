@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "606264639007",
+    "firebase_url": "https://cfgteam5.firebaseio.com",
+    "project_id": "cfgteam5",
+    "storage_bucket": "cfgteam5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606264639007:android:cb67bb8d6c8c429c",
+        "android_client_info": {
+          "package_name": "com.example.rajath.reachinghand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606264639007-g3bbvnv51q00deoak6ji4lcqthsuu2cj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLpktsKXAix4OoFHH-8yGegNIBZPIUfDc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
