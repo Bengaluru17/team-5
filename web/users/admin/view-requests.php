@@ -63,7 +63,7 @@ if (isset($_GET['gender']) || isset($_GET['category']))
             <tr>
                 <th style="width:15%">Category</th>
                 <th style="width:15%">Name</th>
-                <th style="width:10%">Count</th>
+                <th style="width:10%">Quantity</th>
                 <th style="width:10%">Price</th>
                 <th style="width:15%">Total Price</th>
                 <th style="width:10%">Dormitory</th>

@@ -11,15 +11,15 @@
         </div>
     </div>
     <div class="other-element">
-        <a href="add-user.php">
-            <i class="fa fa-user-plus" aria-hidden="true"></i>
-            Add Users
-        </a>
-    </div>
-    <div class="other-element">
         <a href="view-users.php">
             <i class="fa fa-eye" aria-hidden="true"></i>
             View Users
+        </a>
+    </div>
+    <div class="other-element">
+        <a href="add-request.php">
+            <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+            Request an Item
         </a>
     </div>
     <div class="other-element">
