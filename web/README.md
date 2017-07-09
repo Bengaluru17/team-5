@@ -8,17 +8,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 ROOT
 1. users
- a) accountant
- b) admin
- c) font-awesome
- d) volunteer
- e) warden
- f) config.php
- g) index.php
- h) indexstyle.scss
- i) login.php
- j) loginstyle.scss
- k) validate.php
+ 1.1 accountant
+ 1.2 admin
+ 1.3 font-awesome
+ 1.4 volunteer
+ 1.5 warden
+ 1.6 config.php
+ 1.7 index.php
+ 1.8 indexstyle.scss
+ 1.9 login.php
+ 1.10 loginstyle.scss
+ 1.11 validate.php
 2. config.php
 3. index.php
 4. README.md
