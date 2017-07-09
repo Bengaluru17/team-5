@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -61,6 +62,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Log.d("onCreateEnd", "onCreate:");
+
+        mListView.setOnItemClickListener(new ListView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                // TODO Auto-generated method stub
+                Toast.makeText(MainActivity.this, "Item Bought", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 

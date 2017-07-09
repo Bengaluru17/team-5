@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,13 +33,25 @@ public class ListAdapter extends ArrayAdapter<Posts> {
         TextView product = (TextView) convertView.findViewById(R.id.product);
         TextView name = (TextView) convertView.findViewById(R.id.user);
         TextView quantity = (TextView) convertView.findViewById(R.id.quantity);
+        Button btnTransfer = (Button) convertView.findViewById(R.id.btnTransfer);
 
         Posts message = getItem(position);
-        product.setText(message.getProductName());
-        quantity.setText(message.getProductQuantity());
-        name.setText(message.getusr());
-        approv.setText(message.getappro());
-
+        if(message.getProductName()!=null) {
+            product.setText(message.getProductName());
+        }
+        if (message.getProductQuantity() != null) {
+            quantity.setText(message.getProductQuantity());
+        }
+        if (message.getusr()!=null) {
+            name.setText(message.getusr());
+        }
+        if (message.getappro() != null) {
+            approv.setText(message.getappro());
+        }
+        if(message.getappro() == "approved"){
+            btnTransfer.setVisibility(View.VISIBLE);
+        }
         return convertView;
     }
+
 }

@@ -1,5 +1,8 @@
 package com.example.rajath.reachinghand;
 
+import android.view.View;
+import android.widget.Toast;
+
 /**
  * Created by rajath on 08-07-2017.
  */
@@ -59,4 +62,5 @@ public class Posts {
     public void setappro(String p){
         approve= p;
     }
+
 }
