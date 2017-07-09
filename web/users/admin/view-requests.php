@@ -85,7 +85,13 @@ if(isset($_POST['Update_Type']))
             while ($row = mysqli_fetch_row($search_result)) {
             ?>
             <tr>
-                <td><?php echo $row[5]; ?></td>
+                <td><?php
+                    if(strcmp ($row[5],"st") == 0) echo "Stationary";
+                    if(strcmp ($row[5],"kt") == 0) echo "Kitchen";
+                    if(strcmp ($row[5],"ut") == 0) echo "Utilities";
+                    if(strcmp ($row[5],"md") == 0) echo "Medication";
+                    ?>
+                </td>
                 <td><?php echo $row[3]; ?></td>
                 <td><?php echo $row[2]; ?></td>
                 <td><?php echo $row[1]; ?></td>
