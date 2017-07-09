@@ -7,16 +7,17 @@ Welcome to the README.md for the web application. So here you can understand the
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 .
-├── users                   # Compiled files (alternatively `dist`)
-    ├── config.php              # Documentation files (alternatively `doc`)
-    ├── index.php                     # Source files (alternatively `lib` or `app`)
-    ├── style.css  
-├── config.php              # Documentation files (alternatively `doc`)
-├── index.php                     # Source files (alternatively `lib` or `app`)
-├── style.css                    # Automated tests (alternatively `spec` or `tests`)
-├── tools                   # Tools and utilities
-├── LICENSE
-└── README.md
+ * [tree-md](./tree-md)
+ * [dir2](./dir2)
+   * [file21.ext](./dir2/file21.ext)
+   * [file22.ext](./dir2/file22.ext)
+   * [file23.ext](./dir2/file23.ext)
+ * [dir1](./dir1)
+   * [file11.ext](./dir1/file11.ext)
+   * [file12.ext](./dir1/file12.ext)
+ * [file_in_root.ext](./file_in_root.ext)
+ * [README.md](./README.md)
+ * [dir3](./dir3)
 
 ### Prerequisites
 
