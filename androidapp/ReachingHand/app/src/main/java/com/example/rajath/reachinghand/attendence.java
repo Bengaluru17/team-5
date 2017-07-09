@@ -37,9 +37,9 @@ public class attendence extends AppCompatActivity {
         listview = (ListView)findViewById(R.id.listView1);
         listview.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         //string array
-        String[] foody = { "Jhon", "Tom", "Sham", "Ram"};
+        String[] student = { "Jhon", "Tom", "Sham", "Ram"};
         // set adapter for listview
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, foody);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, student);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -13,7 +13,7 @@ public class Posts {
     public Posts(){
     }
 
-    public Posts(String product, String quantity, String pri,String usr,String appro){
+    public Posts(String appro, String pri, String product,String quantity,String usr){
         productName = product;
         productQuantity = quantity;
         price = pri;

@@ -9,12 +9,16 @@ public class ListPost {
     private String productQuantity;
     private String price;
     private String userName;
+    private String appro;
     public ListPost(){}
 
-    public ListPost(String product, String quantity, String name){
+    public ListPost(String arr, String pri, String product,String quantity,String name){
+        appro=arr;
+        price=pri;
         productName = product;
         productQuantity = quantity;
         userName = name;
+
     }
 
     public String getProductName(){
@@ -45,7 +49,16 @@ public class ListPost {
         return userName;
     }
 
+    public void setappr(String name){
+        appro = name;
+    }
+    public String getappro(){
+        return appro;
+    }
+
     public void setName(String name){
         userName = name;
     }
+
+
 }

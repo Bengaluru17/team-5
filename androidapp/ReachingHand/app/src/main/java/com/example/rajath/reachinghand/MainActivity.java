@@ -15,8 +15,7 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -33,15 +32,12 @@ public class MainActivity extends AppCompatActivity {
     private ChildEventListener mChildEventListner;
     private ListAdapter mAdapter;
     private ListView mListView;
-    private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthListner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
 
 
@@ -50,9 +46,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         mListView = (ListView) findViewById(R.id.messageListView);
-        List<ListPost> friendlyMessages = new ArrayList<>();
+        List<Posts> friendlyMessages = new ArrayList<>();
         mAdapter = new ListAdapter(this, R.layout.list_row, friendlyMessages);
-        ListPost post = new ListPost("demo","demo","demo");
+        Posts post = new Posts();
+
         mListView.setAdapter(mAdapter);
         mAdapter.add(post);
 
@@ -64,27 +61,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Log.d("onCreateEnd", "onCreate:");
-
-        mAuthListner = new FirebaseAuth.AuthStateListener() {
-            public static final int RC_SIGN_IN = 1;
-
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null){
-                    signedInEvent(user.getDisplayName());
-                } else {
-                    signedOutEvent();
-                    startActivityForResult(
-                            AuthUI.getInstance()
-                                    .createSignInIntentBuilder()
-                                    .setIsSmartLockEnabled(false)
-                                    .setProviders(
-                                            AuthUI.EMAIL_PROVIDER)
-                                    .build(),
-                            RC_SIGN_IN);
-                }
-            }
 
     }
 
@@ -112,8 +88,10 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                ListPost posts = dataSnapshot.getValue(ListPost.class);
+                Posts posts = dataSnapshot.getValue(Posts.class);
                 mAdapter.add(posts);
+
+
             }
 
             @Override
@@ -134,11 +112,6 @@ public class MainActivity extends AppCompatActivity {
         };
         mMessageReference.addChildEventListener(mChildEventListner);
     }
+
 }
-
-    private void signedOutEvent() {
-    }
-
-    private void signedInEvent(String displayName) {
-    }
 

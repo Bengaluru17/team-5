@@ -81,14 +81,14 @@ public class product_apporve extends AppCompatActivity {
             Toast.makeText(this, "Purchase approved",
                     Toast.LENGTH_LONG).show();
 
-             posts = new Posts(title,body,amount,usr,appr="1");
+             posts = new Posts(title,body,amount,usr,appr="approved");
 
         }
         else
         {
             Toast.makeText(this, "Purchase notApporved",
                     Toast.LENGTH_LONG).show();
-            posts = new Posts(title,body,amount,usr,appr="0");
+            posts = new Posts(title,body,amount,usr,appr="DisApporved");
         }
         mMessageReference.push().setValue(posts);
         finish();
