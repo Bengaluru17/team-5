@@ -11,6 +11,12 @@
         </div>
     </div>
     <div class="other-element">
+        <a href="main.php">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Home
+        </a>
+    </div>
+    <div class="other-element">
         <a href="add-user.php">
             <i class="fa fa-user-plus" aria-hidden="true"></i>
             Add Users

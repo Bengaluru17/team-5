@@ -10,6 +10,13 @@
             Hello, <?php echo $_SESSION['first_name']; ?>!
         </div>
     </div>
+    <i class="fa fa-home" aria-hidden="true"></i>
+    <div class="other-element">
+        <a href="main.php">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Home
+        </a>
+    </div>
     <div class="other-element">
         <a href="view-users.php">
             <i class="fa fa-eye" aria-hidden="true"></i>
