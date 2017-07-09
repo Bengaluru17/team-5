@@ -6,6 +6,7 @@ Welcome to the README.md for the web application. So here you can understand the
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+```
 ROOT
 1. users
  1.1 accountant
@@ -23,6 +24,7 @@ ROOT
 3. index.php
 4. README.md
 5. style.css
+```
 
 ### Prerequisites
 
