@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("onCreateEnd", "onCreate:");
 
-        mListView.setOnItemClickListener(new ListView.OnItemClickListener()
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
