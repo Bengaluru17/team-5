@@ -2,10 +2,10 @@
 include '../index.php';
 include 'sidebar.php';
 
-if(!isset($_SESSION['perm']) || strcmp($_SESSION['perm'],"ad")!=0)
+if(!isset($_SESSION['perm']) || strcmp($_SESSION['perm'],"vo")!=0)
     header('Location: logout.php');
 
-$getlist = "SELECT * FROM requests";
+$getlist = 'SELECT * FROM requests WHERE username = "' . $_SESSION['username'] . '"';
 $result = $conn->query($getlist);
 $search_result = $result;
 
@@ -13,25 +13,19 @@ if (isset($_GET['gender']) || isset($_GET['category']))
 {   if(strcmp ($_GET['gender'],"both") == 0 && strcmp($_GET['category'],"all") == 0)
     $getlist = "SELECT * FROM requests";
     if(strcmp ($_GET['gender'],"both") == 0 && strcmp($_GET['category'],"all") != 0)
-        $getlist = 'SELECT * FROM requests WHERE `category`="'.$_GET['category'].'"';
+        $getlist = 'SELECT * FROM requests WHERE `category`="'.$_GET['category'].'" AND username = "' . $_SESSION['username'] . '"';
     if(strcmp ($_GET['gender'],"both") != 0 && strcmp($_GET['category'],"all") == 0)
-        $getlist = 'SELECT * FROM requests WHERE `gender`="'.$_GET['gender'].'"';
+        $getlist = 'SELECT * FROM requests WHERE `gender`="'.$_GET['gender'].'" AND username = "' . $_SESSION['username'] . '"';
     if(strcmp ($_GET['gender'],"both") != 0 && strcmp($_GET['category'],"all") != 0)
-        $getlist = 'SELECT * FROM requests WHERE `gender`="'.$_GET['gender'].'" AND `category`="'.$_GET['category'].'"';
+        $getlist = 'SELECT * FROM requests WHERE `gender`="'.$_GET['gender'].'" AND `category`="'.$_GET['category'].'" AND username = "' . $_SESSION['username'] . '"';
     $search_result = $conn->query($getlist);
 }
 
 if(isset($_POST['Update_Type']))
 {
-    if($_POST['Update_Type']=="ap") {
+    if($_POST['Update_Type']=="bo") {
         $to_reqid = $_POST['reqid'];
-        $update = 'UPDATE requests SET status = "ap" WHERE reqid = ' . $to_reqid . '';
-        $run_update = $conn->query($update);
-        header('Location: view-requests.php');
-    }
-    if($_POST['Update_Type']=="re") {
-        $to_reqid = $_POST['reqid'];
-        $update = 'UPDATE requests SET status = "re" WHERE reqid = ' . $to_reqid . '';
+        $update = 'UPDATE requests SET status = "bo" WHERE reqid = ' . $to_reqid . '';
         $run_update = $conn->query($update);
         header('Location: view-requests.php');
     }
@@ -40,7 +34,7 @@ if(isset($_POST['Update_Type']))
 
 <div class="main-body">
     <div class="pagetitle">
-        View Requests
+        View your Requests
     </div>
     <section class="userfilter">
         <form method="GET" action="view-requests.php" id="searchForm">
@@ -100,39 +94,36 @@ if(isset($_POST['Update_Type']))
                 <td>
                         <span>
                             <?php if (strcmp($row[4], "in") == 0) {?>
-                                <form action="view-requests.php" method="POST"">
-                                <input type="hidden" name="reqid" value="<?php echo $row[0]; ?>">
-                                <input type="hidden" name="Update_Type" value="ap">
                                 <button type="submit" title="Initiated">
-                                    <i class="fa fa-info"></i>
+                                    <i class="fa fa-info" aria-hidden="true"></i>
                                 </button>
-                                </form>
-                                Approve?
+                                Not approved
                             <?php
                             } else if( strcmp ($row[4],"ap") == 0) {
                             ?>
-                                <button type="submit" title="Approved">
-                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                <form action="view-requests.php" method="POST"">
+                                <input type="hidden" name="reqid" value="<?php echo $row[0]; ?>">
+                                <input type="hidden" name="Update_Type" value="bo">
+                                <button type="submit" title="Initiated">
+                                    <i class="fa fa-thumbs-up"></i>
                                 </button>
-                                Approved
+                                </form>
+                                Bought?
                             <?php
                             } else if( strcmp ($row[4],"bo") == 0) {
                             ?>
-                                <form action="view-requests.php" method="POST"">
-                                <input type="hidden" name="reqid" value="<?php echo $row[0]; ?>">
-                                <input type="hidden" name="Update_Type" value="re">
-                                <button type="submit" title="Initiated">
-                                    <i class="fa fa-shopping-bag"></i>
+                                <button type="submit" title="Not reimbursed">
+                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                                 </button>
-                                </form>
-                                Reimbursed?
+                                Not reimbursed
+
                             <?php
                             } else if( strcmp ($row[4],"re") == 0) {
                              ?>
                                 <button type="submit" title="Reimbursed">
-                                    <i class="fa fa-registered" aria-hidden="true"></i>
+                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                                 </button>
-                                Reimbursed
+                                Not reimbursed
                             <?php } ?>
                         </span>
                     </td>

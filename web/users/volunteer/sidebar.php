@@ -23,6 +23,12 @@
         </a>
     </div>
     <div class="other-element">
+        <a href="view-requests.php">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            View your Requests
+        </a>
+    </div>
+    <div class="other-element">
         <a href="add-request.php">
             <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
             Request an Item
