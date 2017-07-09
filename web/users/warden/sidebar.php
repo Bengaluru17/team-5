@@ -10,16 +10,29 @@
             Hello, <?php echo $_SESSION['first_name']; ?>!
         </div>
     </div>
+    <i class="fa fa-home" aria-hidden="true"></i>
     <div class="other-element">
-        <a href="add-user.php">
-            <i class="fa fa-user-plus" aria-hidden="true"></i>
-            Add Users
+        <a href="main.php">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Home
         </a>
     </div>
     <div class="other-element">
         <a href="view-users.php">
             <i class="fa fa-eye" aria-hidden="true"></i>
             View Users
+        </a>
+    </div>
+    <div class="other-element">
+        <a href="view-requests.php">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+            View your Requests
+        </a>
+    </div>
+    <div class="other-element">
+        <a href="add-request.php">
+            <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+            Request an Item
         </a>
     </div>
     <div class="other-element">

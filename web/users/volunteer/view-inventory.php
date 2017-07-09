@@ -93,30 +93,6 @@ if (isset($_GET['gender']) || isset($_GET['category']))
                             <i class="fa fa-trash"></i>
                         </button>
                         </span>
-                        <!--                        <form action="#" method="post" enctype="multipart/form-data">-->
-                        <!--                            <input type="hidden" name="cid" value="--><?php //echo $row[0]; ?><!--">-->
-                        <!--                            <input type="hidden" name="type" value="edit">-->
-                        <!--                            <button type="submit" title="Edit Details">-->
-                        <!--                                <i class="fa fa-pencil"></i>-->
-                        <!--                            </button>-->
-                        <!--                        </form>-->
-                        <!---->
-                        <!--                        <form action="#" method="post" enctype="multipart/form-data">-->
-                        <!--                            <input type="hidden" name="cid" value="--><?php //echo $row[0]; ?><!--">-->
-                        <!--                            <input type="hidden" name="type" value="view">-->
-                        <!--                            <button type="submit" title="View Details">-->
-                        <!--                                <i class="fa fa-eye"></i>-->
-                        <!--                            </button>-->
-                        <!--                        </form>-->
-                        <!---->
-                        <!--                        <form action="#" method="POST"">-->
-                        <!--                        <input type="hidden" name="cid" value="--><?php //echo $row[0]; ?><!--">-->
-                        <!--                        <input type="hidden" name="Del_Type" value="del">-->
-                        <!--                        <button type="submit" title="Delete">-->
-                        <!--                            <i class="fa fa-trash"></i>-->
-                        <!--                        </button>-->
-                        <!--                        </form>-->
-
                     </td>
                 </tr>
                 <?php

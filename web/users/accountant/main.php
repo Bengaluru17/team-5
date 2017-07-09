@@ -5,7 +5,9 @@ if(!isset($_SESSION['perm']) || strcmp($_SESSION['perm'],"ac")!=0)
     header('Location: logout.php');
 ?>
     <div class="main-body">
-        Welcome home, accountant!
+        <div class="cotitle">
+            Howdy, Accountant!
+        </div>
     </div>
 </body>
 </html>

@@ -11,9 +11,9 @@
         </div>
     </div>
     <div class="other-element">
-        <a href="add-user.php">
-            <i class="fa fa-user-plus" aria-hidden="true"></i>
-            Add Users
+        <a href="main.php">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Home
         </a>
     </div>
     <div class="other-element">
@@ -23,13 +23,19 @@
         </a>
     </div>
     <div class="other-element">
+        <a href="add-request.php">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+            Request an Item
+        </a>
+    </div>
+    <div class="other-element">
         <a href="view-inventory.php">
             <i class="fa fa-truck" aria-hidden="true"></i>
             View Inventory
         </a>
     </div>
     <div class="other-element">
-        <a href="logout.php">
+        <a href="view-requests.php">
             <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
             View Requests
         </a>
