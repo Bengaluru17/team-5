@@ -13,8 +13,15 @@ $getlist = "SELECT * FROM requests";
 $result = $conn->query($getlist);
 $search_result = $result;
 
-if (isset($_GET['perm']))
-{   $getlist = 'SELECT * FROM `requests` WHERE `perm`="'.$_GET['perm'].'"';
+if (isset($_GET['gender']) || isset($_GET['category']))
+{   if(strcmp ($_GET['gender'],"both") == 0 && strcmp($_GET['category'],"all") == 0)
+    $getlist = "SELECT * FROM requests";
+    if(strcmp ($_GET['gender'],"both") == 0 && strcmp($_GET['category'],"all") != 0)
+        $getlist = 'SELECT * FROM requests WHERE `category`="'.$_GET['category'].'"';
+    if(strcmp ($_GET['gender'],"both") != 0 && strcmp($_GET['category'],"all") == 0)
+        $getlist = 'SELECT * FROM requests WHERE `gender`="'.$_GET['gender'].'"';
+    if(strcmp ($_GET['gender'],"both") != 0 && strcmp($_GET['category'],"all") != 0)
+        $getlist = 'SELECT * FROM requests WHERE `gender`="'.$_GET['gender'].'" AND `category`="'.$_GET['category'].'"';
     $search_result = $conn->query($getlist);
 //    $row = mysqli_fetch_row($search_result);
 //    echo $row[2];
@@ -23,27 +30,32 @@ if (isset($_GET['perm']))
 
 <div class="main-body">
     <div class="pagetitle">
-        View Requests<?php
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ad") == 0) echo ": Admin";
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ac") == 0) echo ": Accountant";
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"wa") == 0) echo ": Warden";
-        if(isset($_GET['perm']) && strcmp ($_GET['perm'],"vo") == 0) echo ": Volunteer";
-        ?>
+        View Requests
     </div>
-    <div class="userfilter">
-        <form method="GET" action="view-users.php" id="searchForm">
-            <div class="input-group">
-                <select name="perm">
-                    <option value="ad">Admin</option>
-                    <option value="ac">Accountant</option>
-                    <option value="wa">Warden</option>
-                    <option value="vo">Volunteer</option>
+    <section class="userfilter">
+        <form method="GET" action="view-requests.php" id="searchForm">
+            <div class="input-group gone">
+                <select name="gender">
+                    <option value="both">Both</option>
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
                 </select>
             </div>
-<!--            <input type="hidden" value="Yes" name="AddUser">-->
-            <button type="submit" class="btn btn-primary">Filter Users</button>
+            <div class="input-group gtwo">
+                <select name="category">
+                    <option value="all">All</option>
+                    <option value="st">Stationary</option>
+                    <option value="kt">Kitchen</option>
+                    <option value="ut">Utilities</option>
+                    <option value="md">Medication</option>
+                </select>
+            </div>
+            <!--            <input type="hidden" value="Yes" name="AddUser">-->
+            <div class="gthree">
+                <button type="submit" class="btn btn-primary">Filter Requests</button>
+            </div>
         </form>
-    </div>
+    </section>
 <!--    --><?php //if($search_result)
 //    { ?>
     <div class="view-users">
@@ -68,7 +80,7 @@ if (isset($_GET['perm']))
                 <td><?php echo $row[2]; ?></td>
                 <td><?php echo $row[1]; ?></td>
                 <td><?php $total_price = $row[2] * $row[1];
-                    echo $total_price; ?></td>
+                    echo "Rs. ".$total_price; ?></td>
                 <td><?php
                     if (strcmp($row[6], "m") == 0) echo "Male";
                     if (strcmp($row[6], "f") == 0) echo "Female";
@@ -79,55 +91,32 @@ if (isset($_GET['perm']))
                         <span>
                             <?php if (strcmp($row[4], "in") == 0) {?>
                                 <button type="submit" title="Initiated">
-                                    <i class="fa fa-pencil"></i>
+                                    <i class="fa fa-info" aria-hidden="true"></i>
                                 </button>
+                                Approve?
                             <?php
                             } else if( strcmp ($row[4],"ap") == 0) {
                             ?>
                                 <button type="submit" title="Approved">
-                                    <i class="fa fa-pencil"></i>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                                 </button>
+                                Approved
                             <?php
                             } else if( strcmp ($row[4],"bo") == 0) {
                             ?>
                                 <button type="submit" title="Bought">
-                                    <i class="fa fa-pencil"></i>
+                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                                 </button>
+                                Reimbursed?
                             <?php
                             } else if( strcmp ($row[4],"re") == 0) {
                              ?>
                                 <button type="submit" title="Reimbursed">
-                                    <i class="fa fa-pencil"></i>
+                                    <i class="fa fa-registered" aria-hidden="true"></i>
                                 </button>
+                                Reimbursed
                             <?php } ?>
-                        <button type="submit" title="Edit Details">
-                            <i class="fa fa-pencil"></i>
-                        </button>
                         </span>
-<!--                        <form action="#" method="post" enctype="multipart/form-data">-->
-<!--                            <input type="hidden" name="cid" value="--><?php //echo $row[0]; ?><!--">-->
-<!--                            <input type="hidden" name="type" value="edit">-->
-<!--                            <button type="submit" title="Edit Details">-->
-<!--                                <i class="fa fa-pencil"></i>-->
-<!--                            </button>-->
-<!--                        </form>-->
-<!---->
-<!--                        <form action="#" method="post" enctype="multipart/form-data">-->
-<!--                            <input type="hidden" name="cid" value="--><?php //echo $row[0]; ?><!--">-->
-<!--                            <input type="hidden" name="type" value="view">-->
-<!--                            <button type="submit" title="View Details">-->
-<!--                                <i class="fa fa-eye"></i>-->
-<!--                            </button>-->
-<!--                        </form>-->
-<!---->
-<!--                        <form action="#" method="POST"">-->
-<!--                        <input type="hidden" name="cid" value="--><?php //echo $row[0]; ?><!--">-->
-<!--                        <input type="hidden" name="Del_Type" value="del">-->
-<!--                        <button type="submit" title="Delete">-->
-<!--                            <i class="fa fa-trash"></i>-->
-<!--                        </button>-->
-<!--                        </form>-->
-
                     </td>
                 </tr>
                 <?php

@@ -22,37 +22,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view-requests.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/admin/view-requests.php">
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/users/volunteer/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#5;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <marker date="1499557358137" expanded="true" signature="242:264" ph="SELECT * FRO... login" />
-                <marker date="1499557358137" expanded="true" signature="370:427" ph="SELECT * FRO... login" />
-              </folding>
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view-inventory.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/users/admin/view-inventory.php">
+      <file leaf-file-name="view-users.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/users/volunteer/view-users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+            <state relative-caret-position="323">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
-                <marker date="1499552305467" expanded="true" signature="242:265" ph="SELECT * FRO... inventory" />
-                <marker date="1499552305467" expanded="true" signature="490:513" ph="SELECT * FRO... inventory" />
-                <marker date="1499552305467" expanded="true" signature="621:662" ph="SELECT * FRO... inventory" />
-                <marker date="1499552305467" expanded="true" signature="621:685" ph="SELECT * FRO... inventory" />
-                <marker date="1499552305467" expanded="true" signature="793:853" ph="SELECT * FRO... inventory" />
+                <marker date="1499558588072" expanded="true" signature="242:261" ph="SELECT * FRO... login" />
+                <marker date="1499558588072" expanded="true" signature="242:279" ph="SELECT * FRO... login" />
               </folding>
             </state>
           </provider>
@@ -81,7 +69,6 @@
         <option value="$PROJECT_DIR$/users/admin/logout.php" />
         <option value="$PROJECT_DIR$/users/admin/check-accounts.php" />
         <option value="$PROJECT_DIR$/users/admin/add-user.php" />
-        <option value="$PROJECT_DIR$/users/admin/view-inventory.php" />
         <option value="$PROJECT_DIR$/users/admin/view-users.php" />
         <option value="$PROJECT_DIR$/users/admin/main.php" />
         <option value="$PROJECT_DIR$/users/login.php" />
@@ -89,14 +76,12 @@
         <option value="$PROJECT_DIR$/users/volunteer/add-user.php" />
         <option value="$PROJECT_DIR$/users/volunteer/check-accounts.php" />
         <option value="$PROJECT_DIR$/users/volunteer/view-inventory.php" />
-        <option value="$PROJECT_DIR$/users/volunteer/view-users.php" />
         <option value="$PROJECT_DIR$/users/accountant/add-user.php" />
         <option value="$PROJECT_DIR$/users/accountant/check-accounts.php" />
         <option value="$PROJECT_DIR$/users/accountant/view-inventory.php" />
         <option value="$PROJECT_DIR$/users/accountant/view-users.php" />
         <option value="$PROJECT_DIR$/users/accountant/main.php" />
         <option value="$PROJECT_DIR$/users/indexstyle.scss" />
-        <option value="$PROJECT_DIR$/users/volunteer/sidebar.php" />
         <option value="$PROJECT_DIR$/users/warden/sidebar.php" />
         <option value="$PROJECT_DIR$/users/warden/add-user.php" />
         <option value="$PROJECT_DIR$/users/warden/check-accounts.php" />
@@ -106,7 +91,10 @@
         <option value="$PROJECT_DIR$/users/accountant/sidebar.php" />
         <option value="$PROJECT_DIR$/users/admin/sidebar.php" />
         <option value="$PROJECT_DIR$/users/validate.php" />
+        <option value="$PROJECT_DIR$/users/admin/view-inventory.php" />
         <option value="$PROJECT_DIR$/users/admin/view-requests.php" />
+        <option value="$PROJECT_DIR$/users/volunteer/sidebar.php" />
+        <option value="$PROJECT_DIR$/users/volunteer/view-users.php" />
       </list>
     </option>
   </component>
@@ -198,7 +186,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="volunteer" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,10 +252,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40545000" />
+    <option name="totallyTimeSpent" value="41670000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -507,17 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/volunteer/view-users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
-          <folding>
-            <marker date="1499553810846" expanded="true" signature="242:261" ph="SELECT * FRO... login" />
-            <marker date="1499553810846" expanded="true" signature="367:421" ph="SELECT * FRO... login" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/accountant/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -598,14 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/volunteer/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -696,34 +665,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/admin/view-requests.php">
+    <entry file="file://$PROJECT_DIR$/users/admin/view-inventory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+        <state relative-caret-position="153">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="57" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#5;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <marker date="1499557358137" expanded="true" signature="242:264" ph="SELECT * FRO... login" />
-            <marker date="1499557358137" expanded="true" signature="370:427" ph="SELECT * FRO... login" />
+            <marker date="1499558058577" expanded="true" signature="242:265" ph="SELECT * FRO... inventory" />
+            <marker date="1499558058577" expanded="true" signature="490:513" ph="SELECT * FRO... inventory" />
+            <marker date="1499558058577" expanded="true" signature="621:662" ph="SELECT * FRO... inventory" />
+            <marker date="1499558058577" expanded="true" signature="621:685" ph="SELECT * FRO... inventory" />
+            <marker date="1499558058577" expanded="true" signature="793:853" ph="SELECT * FRO... inventory" />
+            <marker date="1499558058577" expanded="true" signature="961:1038" ph="SELECT * FRO... inventory" />
+            <marker date="1499558058577" expanded="true" signature="961:1060" ph="SELECT * FRO... inventory" />
+            <marker date="1499558058577" expanded="true" signature="961:1061" ph="SELECT * FRO... inventory" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/admin/view-inventory.php">
+    <entry file="file://$PROJECT_DIR$/users/admin/view-requests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+        <state relative-caret-position="200">
+          <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
           <folding>
-            <marker date="1499552305467" expanded="true" signature="242:265" ph="SELECT * FRO... inventory" />
-            <marker date="1499552305467" expanded="true" signature="490:513" ph="SELECT * FRO... inventory" />
-            <marker date="1499552305467" expanded="true" signature="621:662" ph="SELECT * FRO... inventory" />
-            <marker date="1499552305467" expanded="true" signature="621:685" ph="SELECT * FRO... inventory" />
-            <marker date="1499552305467" expanded="true" signature="793:853" ph="SELECT * FRO... inventory" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#4;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#5;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#6;n#tr#0;n#table#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <marker date="1499558199253" expanded="true" signature="242:264" ph="SELECT * FRO... login" />
+            <marker date="1499558199253" expanded="true" signature="485:507" ph="SELECT * FRO... requests" />
+            <marker date="1499558199253" expanded="true" signature="615:678" ph="SELECT * FRO... requests" />
+            <marker date="1499558199253" expanded="true" signature="786:845" ph="SELECT * FRO... requests" />
+            <marker date="1499558199253" expanded="true" signature="953:1051" ph="SELECT * FRO... requests" />
+            <marker date="1499558199253" expanded="true" signature="1046:1051" ph="SELECT * FRO... login" />
+            <marker date="1499558199253" expanded="true" signature="3271:3317" ph="..." />
+            <marker date="1499558199253" expanded="true" signature="3520:3606" ph="..." />
+            <marker date="1499558199253" expanded="true" signature="3551:3606" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/volunteer/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/volunteer/view-users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <marker date="1499558588072" expanded="true" signature="242:261" ph="SELECT * FRO... login" />
+            <marker date="1499558588072" expanded="true" signature="242:279" ph="SELECT * FRO... login" />
           </folding>
         </state>
       </provider>

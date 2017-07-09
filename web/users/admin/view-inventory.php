@@ -20,6 +20,8 @@ if (isset($_GET['gender']) || isset($_GET['category']))
         $getlist = 'SELECT * FROM inventory WHERE `category`="'.$_GET['category'].'"';
     if(strcmp ($_GET['gender'],"both") != 0 && strcmp($_GET['category'],"all") == 0)
         $getlist = 'SELECT * FROM inventory WHERE `gender`="'.$_GET['gender'].'"';
+    if(strcmp ($_GET['gender'],"both") != 0 && strcmp($_GET['category'],"all") != 0)
+        $getlist = 'SELECT * FROM inventory WHERE `gender`="'.$_GET['gender'].'" AND `category`="'.$_GET['category'].'"';
     $search_result = $conn->query($getlist);
 //    $row = mysqli_fetch_row($search_result);
 //    echo $row[2];
@@ -50,7 +52,7 @@ if (isset($_GET['gender']) || isset($_GET['category']))
             </div>
             <!--            <input type="hidden" value="Yes" name="AddUser">-->
             <div class="gthree">
-                <button type="submit" class="btn btn-primary">Filter Users</button>
+                <button type="submit" class="btn btn-primary">Filter Items</button>
             </div>
         </form>
     </section>

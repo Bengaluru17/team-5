@@ -9,43 +9,21 @@ if(!isset($_SESSION['perm']) || strcmp($_SESSION['perm'],"vo")!=0)
 //    $get_search = $_GET['search'];
 //}
 
-$getlist = "SELECT * FROM login";
+$getlist = "SELECT * FROM login WHERE perm = 'vo'";
 $result = $conn->query($getlist);
 $search_result = $result;
 
-if (isset($_GET['perm']))
-{   $getlist = 'SELECT * FROM `login` WHERE `perm`="'.$_GET['perm'].'"';
-    $search_result = $conn->query($getlist);
-//    $row = mysqli_fetch_row($search_result);
-//    echo $row[2];
-}
 ?>
 
 <div class="main-body">
     <div class="pagetitle">
-        Views Users<?php
+        Views Peers<?php
         if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ad") == 0) echo ": Admin";
         if(isset($_GET['perm']) && strcmp ($_GET['perm'],"ac") == 0) echo ": Accountant";
         if(isset($_GET['perm']) && strcmp ($_GET['perm'],"wa") == 0) echo ": Warden";
         if(isset($_GET['perm']) && strcmp ($_GET['perm'],"vo") == 0) echo ": Volunteer";
         ?>
     </div>
-    <div class="userfilter">
-        <form method="GET" action="view-users.php" id="searchForm">
-            <div class="input-group">
-                <select name="perm">
-                    <option value="ad">Admin</option>
-                    <option value="ac">Accountant</option>
-                    <option value="wa">Warden</option>
-                    <option value="vo">Volunteer</option>
-                </select>
-            </div>
-<!--            <input type="hidden" value="Yes" name="AddUser">-->
-            <button type="submit" class="btn btn-primary">Filter Users</button>
-        </form>
-    </div>
-<!--    --><?php //if($search_result)
-//    { ?>
     <div class="view-users">
         <table>
             <tr>
