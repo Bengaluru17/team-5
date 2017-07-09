@@ -1,12 +1,12 @@
 "# team-5-APP" 
-Despriction :
+/Despriction :
       App is Developed for ONLY Staff. All the Staf With this app will get to know about the Requests made By the College.
       We have A List View Where When the Staff make the request to Buy, it will be Approved by the Automatic Bot.
       If the request is approved or disapporved  it will be visible to all the user and request should have Name of the 
       item , quantity of the item, Price and name of the user who has requested.Apporve and disapprove is done by some business logic           which the admin can speficy at the time of the development.
       Since this App is only for staff they can even Take Attendence of the student.
       
-Improvement:
+/Improvement:
       *) We can provide a field Where Staff can upload the pic of the Bill so that they get rebusement quickly.
          And the Bills are properly documented
          
