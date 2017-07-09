@@ -3,12 +3,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.location.Address;
-import android.location.Location;
 import android.util.Log;
 
-import com.google.android.gms.gcm.Task;
-import com.google.android.gms.location.internal.LocationRequestUpdateData;
+
 
 import java.util.ArrayList;
 
@@ -49,7 +46,7 @@ public class DbHelper extends SQLiteOpenHelper {
         String s;
     }
     public ArrayList<data> getAllLabels() {
-        Log.d("TAG", "getAllLabels: ");
+        Log.d("TAGGGG", "getAllLabels: ");
         ArrayList<data> labelsList = new ArrayList<>();
 
         SQLiteDatabase db = this.getReadableDatabase();
