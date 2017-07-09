@@ -35,7 +35,7 @@
         </a>
     </div>
     <div class="other-element">
-        <a href="logout.php">
+        <a href="view-requests.php">
             <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
             View Requests
         </a>
