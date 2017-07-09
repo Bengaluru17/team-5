@@ -35,7 +35,7 @@ The project is currently inline to be reviewd and deployed at the NGO.
 
 ## Authors
 
-*[contributors](https://github.com/your/project/contributors) who participated in this project and have been a significant part of the development.
+*Team 5 at Code for Good event [dated:9/7/17]
 
 ## License
 
