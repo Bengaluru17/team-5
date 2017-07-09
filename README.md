@@ -32,12 +32,12 @@ The project is currently inline to be reviewd and deployed at the NGO.
 
 ## Built With
 
-* [Wamp Server](http://www.wampserver.com/en/)
-* [Android Studio](https://developer.android.com/studio/index.html)
+* [Wamp Server](http://www.wampserver.com/en/).
+* [Android Studio](https://developer.android.com/studio/index.html).
 
 ## Authors
 
-*Team 5 at Code for Good event [dated:9/7/17]
+* Team 5 at Code for Good event [dated:9/7/17]
 
 ## License
 
