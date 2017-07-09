@@ -75,6 +75,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.attendence: startActivity(new Intent(MainActivity.this,attendence.class));
+            case R.id.location: Intent launchIntent = getPackageManager().getLaunchIntentForPackage("kav.com.location");
+                if (launchIntent != null) {
+                    startActivity(launchIntent);//null pointer check in case package name was not found
+                }
+
         }
         return true;
     }
