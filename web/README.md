@@ -8,22 +8,22 @@ These instructions will get you a copy of the project up and running on your loc
 
 ```
 ROOT
-1. users
- 1.1 accountant
- 1.2 admin
- 1.3 font-awesome
- 1.4 volunteer
- 1.5 warden
- 1.6 config.php
- 1.7 index.php
- 1.8 indexstyle.scss
- 1.9 login.php
- 1.10 loginstyle.scss
- 1.11 validate.php
-2. config.php
-3. index.php
+1. users                          #contains all the different users with respective functionalities
+ 1.1 accountant                   #contains all the functionalities for accountant type user
+ 1.2 admin                        #contains all the functionalities for admin type user
+ 1.3 font-awesome                 #directory for font-awesome assets
+ 1.4 volunteer                    #contains all the functionalities for volunteer type user
+ 1.5 warden                       #contains all the functionalities for warden type user
+ 1.6 config.php                   #the connections with the database
+ 1.7 index.php                    #forms the basic layout of the apps for other layers to build upon
+ 1.8 indexstyle.scss              #stylesheet meant for cross project (except the login)
+ 1.9 login.php                    #brings up the login layer as the first screen
+ 1.10 loginstyle.scss             #stylesheet meant for the login)
+ 1.11 validate.php                #maintains the routing for the different types of users
+2. config.php                     #the connections with the database for the ROOT
+3. index.php                      #the first page which loads up all the necessary documents
 4. README.md
-5. style.css
+5. style.css                      #stylesheet meant for the ROOT
 ```
 
 ### Prerequisites
